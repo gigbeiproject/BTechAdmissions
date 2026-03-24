@@ -9,11 +9,13 @@ export const metadata = {
 export default function About() {
   return (
     <main className="min-h-screen bg-[#FEFCF4] text-[#2D241E] font-sans selection:bg-[#D6FF00] selection:text-black">
-   
+    
+
       {/* 1. ABOUT HERO SECTION */}
       <section className="pt-24 pb-16 max-w-7xl mx-auto px-4 text-center">
         <div className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-full px-4 py-2 text-sm font-semibold mb-8 shadow-sm">
-          <span className="w-2 h-2 rounded-full bg-[#F96D24]"></span>
+          {/* Swapped orange dot for blue */}
+          <span className="w-2 h-2 rounded-full bg-[#3B63F6]"></span>
           About BTech Admissions
         </div>
         
@@ -32,7 +34,8 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           {/* Left Side: Text */}
           <div>
-            <h2 className="text-4xl font-extrabold mb-6">Our Mission is Simple: <span className="text-[#F96D24]">Your Success.</span></h2>
+            {/* Swapped orange text for blue */}
+            <h2 className="text-4xl font-extrabold mb-6">Our Mission is Simple: <span className="text-[#3B63F6]">Your Success.</span></h2>
             <p className="text-gray-600 mb-6 text-lg leading-relaxed">
               Every year, thousands of students miss out on their dream colleges due to a lack of proper guidance, missed deadlines, or confusing application procedures. 
             </p>
@@ -55,9 +58,9 @@ export default function About() {
 
           {/* Right Side: Image/Graphic Placeholder */}
           <div className="bg-[#eef2ff] rounded-3xl p-10 h-full min-h-[400px] flex flex-col justify-center items-center text-center border-2 border-[#3B63F6]/20 relative overflow-hidden">
-             {/* Decorative background elements */}
+             {/* Swapped orange glow for a lime green glow */}
              <div className="absolute top-[-50px] right-[-50px] w-40 h-40 bg-[#3B63F6] rounded-full opacity-10 blur-2xl"></div>
-             <div className="absolute bottom-[-50px] left-[-50px] w-40 h-40 bg-[#F96D24] rounded-full opacity-10 blur-2xl"></div>
+             <div className="absolute bottom-[-50px] left-[-50px] w-40 h-40 bg-[#D6FF00] rounded-full opacity-20 blur-2xl"></div>
              
              <div className="text-7xl mb-6 relative z-10">🎯</div>
              <h3 className="text-2xl font-bold text-[#3B63F6] mb-2 relative z-10">10,000+</h3>
@@ -66,44 +69,44 @@ export default function About() {
         </div>
       </section>
 
-      {/* 3. WHY CHOOSE US (Orange Cards to match the theme) */}
+      {/* 3. WHY CHOOSE US (Dark Cards instead of Orange) */}
       <section className="py-24 bg-white border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-extrabold mb-4">Why Partner With Us?</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-lg">We don't just give advice; we execute the entire admission strategy for you.</p>
+            <p className="text-gray-600 max-w-2xl mx-auto text-lg">{"We don't just give advice; we execute the entire admission strategy for you."}</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Card 1 */}
-            <div className="bg-[#F96D24] rounded-2xl p-8 text-white shadow-xl">
+            {/* Card 1 - Now Premium Dark */}
+            <div className="bg-[#1C1713] rounded-2xl p-8 text-white shadow-xl">
               <div className="bg-white w-12 h-12 rounded-lg flex items-center justify-center text-2xl mb-6 shadow-sm">
                 🧭
               </div>
               <h3 className="text-2xl font-bold mb-3">Expert Counseling</h3>
-              <p className="text-orange-100 font-medium leading-relaxed">
+              <p className="text-gray-400 font-medium leading-relaxed">
                 We analyze your academic profile and align it with the best possible engineering branches at VIT and SRM campuses.
               </p>
             </div>
 
-            {/* Card 2 */}
-            <div className="bg-[#F96D24] rounded-2xl p-8 text-white shadow-xl">
+            {/* Card 2 - Now Premium Dark */}
+            <div className="bg-[#1C1713] rounded-2xl p-8 text-white shadow-xl">
               <div className="bg-white w-12 h-12 rounded-lg flex items-center justify-center text-2xl mb-6 shadow-sm">
                 📝
               </div>
               <h3 className="text-2xl font-bold mb-3">Application Support</h3>
-              <p className="text-orange-100 font-medium leading-relaxed">
+              <p className="text-gray-400 font-medium leading-relaxed">
                 Never miss a deadline. We handle the complex documentation and application tracking for VITEEE and SRMJEEE.
               </p>
             </div>
 
-            {/* Card 3 */}
-            <div className="bg-[#F96D24] rounded-2xl p-8 text-white shadow-xl">
+            {/* Card 3 - Now Premium Dark */}
+            <div className="bg-[#1C1713] rounded-2xl p-8 text-white shadow-xl">
               <div className="bg-white w-12 h-12 rounded-lg flex items-center justify-center text-2xl mb-6 shadow-sm">
                 🤝
               </div>
               <h3 className="text-2xl font-bold mb-3">End-to-End Service</h3>
-              <p className="text-orange-100 font-medium leading-relaxed">
+              <p className="text-gray-400 font-medium leading-relaxed">
                 From the first consultation call to the day you step onto the campus, we are with you every step of the way.
               </p>
             </div>
@@ -115,7 +118,7 @@ export default function About() {
       <section className="py-24 text-center max-w-4xl mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-black mb-6">Ready to secure your future?</h2>
         <p className="text-xl text-gray-600 mb-10">
-          Let's discuss your academic goals and chart out the perfect admission roadmap.
+         {"Let's discuss your academic goals and chart out the perfect admission roadmap."}
         </p>
         <Link 
           href="/contact" 
@@ -125,7 +128,7 @@ export default function About() {
         </Link>
       </section>
 
-     
+      
     </main>
   );
 }

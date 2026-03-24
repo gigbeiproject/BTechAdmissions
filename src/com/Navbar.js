@@ -14,13 +14,13 @@ export default function Navbar() {
           <Link href="/" className="text-[#3B63F6] border-b-2 border-[#3B63F6] pb-1">
             Home
           </Link>
-          <Link href="#colleges" className="hover:text-[#F96D24] transition">
+          <Link href="/vit" className="hover:text-[#F96D24] transition">
             VIT Admissions
           </Link>
-          <Link href="#services" className="hover:text-[#F96D24] transition">
+          <Link href="/srm" className="hover:text-[#F96D24] transition">
             SRM Admissions
           </Link>
-          <Link href="#contact" className="hover:text-[#F96D24] transition">
+          <Link href="/contact" className="hover:text-[#F96D24] transition">
             Contact
           </Link>
           <Link href="/about" className="hover:text-[#F96D24] transition">
